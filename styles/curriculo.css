@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --background-color: #040420;
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #FFA032;
+    --cor-terciaria: #15162E;
+    --cor-hover: #FFA032;
+    --font-primaria: 'Inter', sans-serif;
+    --font-secundaria: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primaria); /* Garantindo que a fonte seja aplicada */
+    background-color: var(--background-color);
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    padding: 2% 15%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.principal {
+    flex: 1;
+    padding: 5% 15%;
+}
+
+.curriculo {
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-secundaria);
+    padding: 30px; /* Espaçamento entre o texto e a borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 0 auto; /* Centraliza a seção */
+    max-width: 800px; /* Largura máxima para evitar que fique muito larga */
+}
+
+.curriculo__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.curriculo__info,
+.curriculo__descricao {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza as informações */
+}
+
+.curriculo__subtitulo {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.curriculo__lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.curriculo__experiencia h3 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.rodape {
+    color: var(--background-color);
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .principal {
+        padding: 5%;
+    }
+
+    .curriculo {
+        padding: 15px; /* Menos espaçamento em telas menores */
+    }
+}

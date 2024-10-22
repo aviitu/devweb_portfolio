@@ -1,0 +1,102 @@
+.projetos__conteudo {
+    padding: 5% 20%;
+    background-color: var(--background-color);
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+}
+
+.projetos__titulo {
+    font-size: 2.5rem;
+    font-family: var(--font-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: 2px solid var(--cor-secundaria); /* Adiciona uma borda ao card */
+    background-color: transparent; /* Remove o fundo colorido */
+    color: var(--cor-primaria);
+    border-radius: 10px;
+    box-shadow: none; /* Remove a sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--font-secundaria);
+    padding: 20px; /* Aumenta o espaço dentro do card */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra no hover */
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+}
+
+.card-text {
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    margin: 1em 0em 2em 0em;
+}
+
+.btn-primary {
+    border: 2px solid var(--cor-secundaria); /* Adiciona uma borda com a cor secundária */
+    background-color: transparent; /* Remove o fundo colorido */
+    color: var(--cor-secundaria); /* Define a cor do texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    font-family: var(--font-secundaria);
+    border-radius: 5px; /* Mantém as bordas arredondadas */
+    padding: 0.75em; /* Aumenta o tamanho do botão */
+    margin-top: 1.5em; /* Espaço extra acima do botão para afastá-lo do conteúdo */
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-secundaria); /* Adiciona cor ao fundo no hover */
+    color: var(--background-color); /* Altera a cor do texto no hover */
+}
+
+
+.btn-primary:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+/* Novas regras para o layout flexível e imagens */
+.card-content {
+    display: flex; /* Define um layout flexível */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+}
+
+.card-img-top {
+    width: 150px; /* Define uma largura fixa para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.card-body {
+    flex: 1; /* Faz com que o corpo do card ocupe o restante do espaço */
+}
+
+.rodape {
+    position: fixed; /* Define a posição como fixa */
+    bottom: 0; /* Fixa o rodapé na parte inferior da página */
+    left: 0; /* Alinha o rodapé à esquerda */
+    right: 0; /* Alinha o rodapé à direita */
+    color: var(--background-color);
+    background-color: var(--cor-secundaria);
+    padding: 1.5rem;
+    text-align: center; 
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+main {
+    margin-bottom: 80px; /* Adiciona espaço para evitar sobreposição com o rodapé */
+}
