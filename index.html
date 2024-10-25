@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Victor Nunes</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/efeitos.js" defer></script>
 </head>
 
 <body>
@@ -17,10 +18,10 @@
             <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a>
         </nav>
     </header>
+
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong
-                    class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
             <p class="apresentacao__conteudo__texto">Olá! sou <strong class="nome-destaque">Victor Nunes</strong>, desenvolvedor
                 Front-end com especialidade em React, HTML e
                 CSS. Ajudo pequenos negócios e designers a
@@ -28,16 +29,33 @@
                 conversar?</p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-                <a class="apresentacao__links__navegacao" href="https://instagram.com/aviitu"> <img
-                        src="./assets/instagram.png"> Instagram</a>
-                <a class="apresentacao__links__navegacao" href="https://github.com/aviitu"><img
-                        src="./assets/github.png">GitHub</a>
-                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/aviitu"><img
-                        src="./assets/linkedin.png">Linkedin</a>
+                <a class="apresentacao__links__navegacao" href="https://instagram.com/aviitu"><img src="./assets/instagram.png"> Instagram</a>
+                <a class="apresentacao__links__navegacao" href="https://github.com/aviitu"><img src="./assets/github.png">GitHub</a>
+                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/aviitu"><img src="./assets/linkedin.png">Linkedin</a>
             </div>
         </section>
         <img class="apresentacao__imagem" src="./assets/victor.jpeg" alt="Minha foto">
     </main>
+
+    <!-- Seção de Contato -->
+    <section class="contato">
+        <h2 class="contato__titulo">Entre em Contato</h2>
+        <form class="contato__formulario" id="formContato" action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    
+
     <footer class="rodape">
         <p>Desenvolvido por Victor</p>
     </footer>

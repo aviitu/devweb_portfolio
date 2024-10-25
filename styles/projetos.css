@@ -83,18 +83,14 @@
 }
 
 .rodape {
-    position: fixed; /* Define a posição como fixa */
-    bottom: 0; /* Fixa o rodapé na parte inferior da página */
-    left: 0; /* Alinha o rodapé à esquerda */
-    right: 0; /* Alinha o rodapé à direita */
     color: var(--background-color);
     background-color: var(--cor-secundaria);
-    padding: 1.5rem;
+    padding: 0.7rem;
     text-align: center; 
     font-family: var(--font-secundaria);
-    font-size: 24px;
-    font-weight: 400;
-    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+    font-size: 18px;
+    font-weight: 600;
+  
 }
 
 main {

@@ -31,7 +31,6 @@ body{
     text-decoration: none;
 }
 
-
 .cabecalho__menu {
     display: flex;
     gap: 80px;
@@ -106,57 +105,64 @@ body{
     height: auto; /* Mantém a proporção da imagem */
     margin-right: 4px; /* Espaço entre a imagem e o texto */
 }
- 
+
+/* Estilos do formulário de contato */
+.contato {
+    padding: 5% 15%;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.contato__titulo {
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato__formulario label {
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+}
+
+.contato__formulario input,
+.contato__formulario textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--background-color);
+    color: var(--cor-primaria);
+}
+
+.contato__formulario button {
+    font-size: 1.25rem;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .rodape {
     color: var(--background-color);
     background-color: var(--cor-secundaria);
-    padding: 1.5rem;
+    padding: 0.7rem;
     text-align: center; 
     font-family: var(--font-secundaria);
-    font-size: 24px;
-    font-weight: 400;
-
-}
-.principal{
-    padding: 8% 15%;
-    display: flex;
-}
-.eu{
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-family: var(--font-secundaria);
-}
-.eu__nome{
-    background-color: var(--cor-secundaria);
-    font-size: 24px;
-    font-weight: 900;
-}
-
-.conteudo__curriculo{
-    font-family: var(--font-secundaria);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-
-}
-.conteudo__curriculo__titulos{
-    background-color: var(--cor-secundaria);
-    
-}
-.conteudo__curriculo__conteudo__mkt__titulo{
-    background-color: var(--cor-secundaria);
-    font-size: 20px;
-}
-.conteudo__curriculo__conteudo__mkt__data{
-    font-style: italic;
-    
-}
-.conteudo__curriculo__conteudo__mkt__conteudo{
-    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 @media (max-width: 900px){
@@ -173,5 +179,10 @@ body{
     .apresentacao__conteudo{
         width: auto;
     }
-    
+}
+.contato__formulario button:hover {
+    background-color: #ff8800;
+    color: var(--background-color);
+    transform: scale(1.05); /* Efeito de aumento */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
 }
